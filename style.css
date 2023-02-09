@@ -12,3 +12,30 @@
 .logo {
     max-width: 100px;
 }
+
+.list-group{
+    display: flex;
+    position: sticky;
+    float: right;
+}
+
+/*p>a.list-group{
+    display: inline;
+    font-weight: 500;
+    text-decoration: none;
+}*/
+
+.list-group{
+    text-align: center;
+}
+h6{
+    border: solid black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.list{
+    margin-top: 20px;
+}
+
