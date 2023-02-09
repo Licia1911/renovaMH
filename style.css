@@ -12,17 +12,23 @@
 .logo {
     max-width: 100px;
 }
-/*----------list-group----------*/
-.list-group{
+
+/*----------list-group----------------------------------------------------------------------------------*/
+.list-group {
     display: flex;
-    position: sticky;
-    float: right;
+    /*position: sticky;*/
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    /*float: right;*/
+
 }
 
-.list-group{
+.list-group {
     text-align: center;
 }
-h6{
+
+h6 {
     border-top: solid 1px #dee2e6;
     border-bottom: solid 1px #dee2e6;
     font-weight: 500;
@@ -30,8 +36,98 @@ h6{
     padding: 3px;
 }
 
-.list-group{
-    margin-top: 20px;
-    
+.list-group {
+    top: calc(80px + 16px);
+    width: 300px;
+    height: calc(100vh - 16px - 80px);
+    margin: 16px;
+    display: flex;
+    padding: 16px;
+    position: sticky;
+    flex-flow: column;
+    background: #fdfbfc;
+    overflow-y: auto;
+    border-radius: 25px;
+    float: right;
 }
-/*----------*/
+
+p>a {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+
+a.list-group-item {
+    color: blue;
+}
+
+.list-group a>img{
+    background-color: aqua;
+    width: 40px;
+    border-radius: 50%;
+}
+/*-------------------MEDIA QUERIES------------------------------------------------------------------------*/
+@media only screen and (max-width:600px) {
+
+    .list-group {
+        top: calc(80px + 16px);
+        width: 100px;
+        height: calc(100vh - 16px - 80px);
+        margin: 16px;
+        display: flex;
+        padding: 16px;
+        position: sticky;
+        flex-flow: column;
+        background: #fdfbfc;
+        overflow-y: auto;
+        border-radius: 25px;
+        float: right;
+        object-fit: contain;
+    }
+    .list-group a>img{
+        background-color: aqua;
+        width: 15px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .list-group {
+        top: calc(80px + 16px);
+        width: 150px;
+        height: calc(100vh - 16px - 80px);
+        margin: 16px;
+        display: flex;
+        padding: 16px;
+        position: sticky;
+        flex-flow: column;
+        background: #fdfbfc;
+        overflow-y: auto;
+        border-radius: 25px;
+        float: right;
+    }
+    .list-group a>img{
+        background-color: aqua;
+        width: 20px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+    .list-group {
+        top: calc(80px + 16px);
+        width: 300px;
+        height: calc(100vh - 16px - 80px);
+        margin: 16px;
+        display: flex;
+        padding: 16px;
+        position: sticky;
+        flex-flow: column;
+        background: #fdfbfc;
+        overflow-y: auto;
+        border-radius: 25px;
+        float: right;
+    }
+}
+/*------------------------------------------list-group----------------------------------------------*/
